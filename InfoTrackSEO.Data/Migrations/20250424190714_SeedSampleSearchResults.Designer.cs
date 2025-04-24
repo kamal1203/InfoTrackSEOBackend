@@ -4,6 +4,7 @@ using InfoTrackSEO.Data.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace InfoTrackSEO.Data.Migrations
 {
     [DbContext(typeof(SeoDbContext))]
-    partial class SeoDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250424190714_SeedSampleSearchResults")]
+    partial class SeedSampleSearchResults
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -63,7 +66,7 @@ namespace InfoTrackSEO.Data.Migrations
                             RankPositions = "1,3,7",
                             ScrapingStrategy = "PowerShell",
                             SearchEngine = "Google",
-                            Timestamp = new DateTime(2025, 4, 23, 12, 0, 0, 0, DateTimeKind.Utc),
+                            Timestamp = new DateTime(2025, 4, 23, 19, 7, 13, 904, DateTimeKind.Utc).AddTicks(4073),
                             Url = "example.com"
                         },
                         new
@@ -73,7 +76,7 @@ namespace InfoTrackSEO.Data.Migrations
                             RankPositions = "2,5",
                             ScrapingStrategy = "PowerShell",
                             SearchEngine = "Google",
-                            Timestamp = new DateTime(2025, 4, 22, 12, 0, 0, 0, DateTimeKind.Utc),
+                            Timestamp = new DateTime(2025, 4, 22, 19, 7, 13, 904, DateTimeKind.Utc).AddTicks(4420),
                             Url = "laptopworld.com"
                         },
                         new
@@ -83,7 +86,7 @@ namespace InfoTrackSEO.Data.Migrations
                             RankPositions = "1",
                             ScrapingStrategy = "PowerShell",
                             SearchEngine = "Google",
-                            Timestamp = new DateTime(2025, 4, 21, 12, 0, 0, 0, DateTimeKind.Utc),
+                            Timestamp = new DateTime(2025, 4, 21, 19, 7, 13, 904, DateTimeKind.Utc).AddTicks(4424),
                             Url = "dotnetdocs.com"
                         },
                         new
@@ -93,7 +96,7 @@ namespace InfoTrackSEO.Data.Migrations
                             RankPositions = "4,8",
                             ScrapingStrategy = "PowerShell",
                             SearchEngine = "Google",
-                            Timestamp = new DateTime(2025, 4, 20, 12, 0, 0, 0, DateTimeKind.Utc),
+                            Timestamp = new DateTime(2025, 4, 20, 19, 7, 13, 904, DateTimeKind.Utc).AddTicks(4426),
                             Url = "scrapemaster.com"
                         },
                         new
@@ -103,7 +106,7 @@ namespace InfoTrackSEO.Data.Migrations
                             RankPositions = "1,2",
                             ScrapingStrategy = "PowerShell",
                             SearchEngine = "Google",
-                            Timestamp = new DateTime(2025, 4, 19, 12, 0, 0, 0, DateTimeKind.Utc),
+                            Timestamp = new DateTime(2025, 4, 19, 19, 7, 13, 904, DateTimeKind.Utc).AddTicks(4427),
                             Url = "ainews.com"
                         },
                         new
@@ -113,7 +116,7 @@ namespace InfoTrackSEO.Data.Migrations
                             RankPositions = "10",
                             ScrapingStrategy = "PowerShell",
                             SearchEngine = "Google",
-                            Timestamp = new DateTime(2025, 4, 18, 12, 0, 0, 0, DateTimeKind.Utc),
+                            Timestamp = new DateTime(2025, 4, 18, 19, 7, 13, 904, DateTimeKind.Utc).AddTicks(4429),
                             Url = "sportszone.com"
                         },
                         new
@@ -123,7 +126,7 @@ namespace InfoTrackSEO.Data.Migrations
                             RankPositions = "1",
                             ScrapingStrategy = "PowerShell",
                             SearchEngine = "Google",
-                            Timestamp = new DateTime(2025, 4, 17, 12, 0, 0, 0, DateTimeKind.Utc),
+                            Timestamp = new DateTime(2025, 4, 17, 19, 7, 13, 904, DateTimeKind.Utc).AddTicks(4430),
                             Url = "weather.com"
                         },
                         new
@@ -133,7 +136,7 @@ namespace InfoTrackSEO.Data.Migrations
                             RankPositions = "3,6",
                             ScrapingStrategy = "PowerShell",
                             SearchEngine = "Google",
-                            Timestamp = new DateTime(2025, 4, 16, 12, 0, 0, 0, DateTimeKind.Utc),
+                            Timestamp = new DateTime(2025, 4, 16, 19, 7, 13, 904, DateTimeKind.Utc).AddTicks(4432),
                             Url = "financehub.com"
                         },
                         new
@@ -143,7 +146,7 @@ namespace InfoTrackSEO.Data.Migrations
                             RankPositions = "1,2,5",
                             ScrapingStrategy = "PowerShell",
                             SearchEngine = "Google",
-                            Timestamp = new DateTime(2025, 4, 15, 12, 0, 0, 0, DateTimeKind.Utc),
+                            Timestamp = new DateTime(2025, 4, 15, 19, 7, 13, 904, DateTimeKind.Utc).AddTicks(4433),
                             Url = "microsoft.com"
                         },
                         new
@@ -153,7 +156,7 @@ namespace InfoTrackSEO.Data.Migrations
                             RankPositions = "7,8",
                             ScrapingStrategy = "PowerShell",
                             SearchEngine = "Google",
-                            Timestamp = new DateTime(2025, 4, 14, 12, 0, 0, 0, DateTimeKind.Utc),
+                            Timestamp = new DateTime(2025, 4, 14, 19, 7, 13, 904, DateTimeKind.Utc).AddTicks(4434),
                             Url = "travelnow.com"
                         },
                         new
@@ -163,7 +166,7 @@ namespace InfoTrackSEO.Data.Migrations
                             RankPositions = "2,4",
                             ScrapingStrategy = "PowerShell",
                             SearchEngine = "Google",
-                            Timestamp = new DateTime(2025, 4, 13, 12, 0, 0, 0, DateTimeKind.Utc),
+                            Timestamp = new DateTime(2025, 4, 13, 19, 7, 13, 904, DateTimeKind.Utc).AddTicks(4436),
                             Url = "foodie.com"
                         },
                         new
@@ -173,7 +176,7 @@ namespace InfoTrackSEO.Data.Migrations
                             RankPositions = "1,3",
                             ScrapingStrategy = "PowerShell",
                             SearchEngine = "Google",
-                            Timestamp = new DateTime(2025, 4, 12, 12, 0, 0, 0, DateTimeKind.Utc),
+                            Timestamp = new DateTime(2025, 4, 12, 19, 7, 13, 904, DateTimeKind.Utc).AddTicks(4437),
                             Url = "musiczone.com"
                         },
                         new
@@ -183,7 +186,7 @@ namespace InfoTrackSEO.Data.Migrations
                             RankPositions = "5,9",
                             ScrapingStrategy = "PowerShell",
                             SearchEngine = "Google",
-                            Timestamp = new DateTime(2025, 4, 11, 12, 0, 0, 0, DateTimeKind.Utc),
+                            Timestamp = new DateTime(2025, 4, 11, 19, 7, 13, 904, DateTimeKind.Utc).AddTicks(4439),
                             Url = "cinemaworld.com"
                         },
                         new
@@ -193,7 +196,7 @@ namespace InfoTrackSEO.Data.Migrations
                             RankPositions = "1,2",
                             ScrapingStrategy = "PowerShell",
                             SearchEngine = "Google",
-                            Timestamp = new DateTime(2025, 4, 10, 12, 0, 0, 0, DateTimeKind.Utc),
+                            Timestamp = new DateTime(2025, 4, 10, 19, 7, 13, 904, DateTimeKind.Utc).AddTicks(4442),
                             Url = "codecamp.com"
                         },
                         new
@@ -203,7 +206,7 @@ namespace InfoTrackSEO.Data.Migrations
                             RankPositions = "3,4",
                             ScrapingStrategy = "PowerShell",
                             SearchEngine = "Google",
-                            Timestamp = new DateTime(2025, 4, 9, 12, 0, 0, 0, DateTimeKind.Utc),
+                            Timestamp = new DateTime(2025, 4, 9, 19, 7, 13, 904, DateTimeKind.Utc).AddTicks(4443),
                             Url = "fitlife.com"
                         },
                         new
@@ -213,7 +216,7 @@ namespace InfoTrackSEO.Data.Migrations
                             RankPositions = "1,5",
                             ScrapingStrategy = "PowerShell",
                             SearchEngine = "Google",
-                            Timestamp = new DateTime(2025, 4, 8, 12, 0, 0, 0, DateTimeKind.Utc),
+                            Timestamp = new DateTime(2025, 4, 8, 19, 7, 13, 904, DateTimeKind.Utc).AddTicks(4445),
                             Url = "gardeners.com"
                         },
                         new
@@ -223,7 +226,7 @@ namespace InfoTrackSEO.Data.Migrations
                             RankPositions = "2,6",
                             ScrapingStrategy = "PowerShell",
                             SearchEngine = "Google",
-                            Timestamp = new DateTime(2025, 4, 7, 12, 0, 0, 0, DateTimeKind.Utc),
+                            Timestamp = new DateTime(2025, 4, 7, 19, 7, 13, 904, DateTimeKind.Utc).AddTicks(4446),
                             Url = "startupdaily.com"
                         },
                         new
@@ -233,7 +236,7 @@ namespace InfoTrackSEO.Data.Migrations
                             RankPositions = "1,3,8",
                             ScrapingStrategy = "PowerShell",
                             SearchEngine = "Google",
-                            Timestamp = new DateTime(2025, 4, 6, 12, 0, 0, 0, DateTimeKind.Utc),
+                            Timestamp = new DateTime(2025, 4, 6, 19, 7, 13, 904, DateTimeKind.Utc).AddTicks(4448),
                             Url = "pythontools.com"
                         },
                         new
@@ -243,7 +246,7 @@ namespace InfoTrackSEO.Data.Migrations
                             RankPositions = "4,7",
                             ScrapingStrategy = "PowerShell",
                             SearchEngine = "Google",
-                            Timestamp = new DateTime(2025, 4, 5, 12, 0, 0, 0, DateTimeKind.Utc),
+                            Timestamp = new DateTime(2025, 4, 5, 19, 7, 13, 904, DateTimeKind.Utc).AddTicks(4449),
                             Url = "carzone.com"
                         },
                         new
@@ -253,7 +256,7 @@ namespace InfoTrackSEO.Data.Migrations
                             RankPositions = "2,5",
                             ScrapingStrategy = "PowerShell",
                             SearchEngine = "Google",
-                            Timestamp = new DateTime(2025, 4, 4, 12, 0, 0, 0, DateTimeKind.Utc),
+                            Timestamp = new DateTime(2025, 4, 4, 19, 7, 13, 904, DateTimeKind.Utc).AddTicks(4451),
                             Url = "fashionista.com"
                         });
                 });
