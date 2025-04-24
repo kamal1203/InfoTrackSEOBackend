@@ -15,7 +15,7 @@ This project contains the backend API for the InfoTrack SEO Rank Scraper applica
 
 *   .NET 8 SDK (or later)
 *   SQL Server (including SQL Express or LocalDB) for database storage.
-*   (Optional) ChromeDriver installed and accessible via PATH if using the Selenium scraping strategy (not default).
+*   Front End: https://github.com/kamal1203/InfoTrackFrontEnd  - (setup the backend first)
 
 ## Setup
 
