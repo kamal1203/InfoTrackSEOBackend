@@ -1,0 +1,6 @@
+@InfoTrackSEO.API_HostAddress = http://localhost:5156
+
+GET {{InfoTrackSEO.API_HostAddress}}/api/SearchController/
+Accept: application/json
+
+###
